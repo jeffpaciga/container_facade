@@ -1,4 +1,3 @@
-#define RANGES_SUPPRESS_IOTA_WARNING	// warning that interface to iota (and ints) has changed.
 #include "range/v3/core.hpp"
 #include "range/v3/to_container.hpp"
 #include "range/v3/view/remove_if.hpp"
