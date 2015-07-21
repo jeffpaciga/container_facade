@@ -14,6 +14,8 @@ using namespace ranges;
 class MyArray : public container_facade<MyArray> {
 	public:
 		static int const N = 6;
+
+		MyArray();
 	
 	private:
 		int v_[N] = {0,1,2,3,4,5};
@@ -40,9 +42,6 @@ class MyArray : public container_facade<MyArray> {
 			private:
 				It it_;
 		};
-
-	public:
-		MyArray();
 
 		cursor<true> begin_cursor() const { return {v_}; }
 		cursor<true> end_cursor() const { return {v_ + N}; }
